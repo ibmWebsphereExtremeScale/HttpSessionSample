@@ -78,7 +78,7 @@ If there is a security exception such as:
 APP/0    Failed to connect to grid
 APP/0    [err] javax.cache.CacheException: com.ibm.websphere.objectgrid.ConnectException: CWOBJ1325E: There was a Client security configuration error. The catalog server at endpoint 129.41.233.108:4,809 is configured with SSL. However, the Client does not have SSL configured. The Client SSL configuration is null.
 ```
-- This error indicates that the client application was not configured with SSL but WebSphere eXtreme Scale was configured with SSl
+- This error indicates that the client application was not configured with SSL but WebSphere eXtreme Scale was configured with SSL
 
 # License
 See LICENSE.txt for license information
