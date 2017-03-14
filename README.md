@@ -7,7 +7,7 @@ This web application is a simple web application that uses WebSphere eXtreme Sca
     - Create a grid of type Session on XSLD
 
 # Getting The Code
-The zip file icsClient.zip is provided for this sample. It includes the WAR file HttpSessionSample.war
+The folder wxsClient is provided for this sample. It includes the WAR file HttpSessionSample.war
 
 # Bluemix Setup
 For the purpose of this tutorial, the application will be deployed on Bluemix. To run your application on Bluemix, you must sign up for Bluemix and install the Cloud Foundry command line tool. To sign up for Bluemix, head to https://console.ng.bluemix.net and register.
@@ -37,7 +37,7 @@ To create a user-provided service on Bluemix with the json file you have created
 ```
 cf cups <service-name> -p <path to/credentials.json file>
 
-//Replace <service-name> with any name of your choosing but service name must have 'XSSession' as the prefix. For example:XSSession-credentials***
+//Replace <service-name> with any name of your choosing but service name must have 'XSSession' as the prefix. For example:XSSession-credentials
 ```
 # Running The Application (UNDER CONSTRUCTION)
 Once you have successfully logged in, let's push the WAR file to your Bluemix account with a Java Buildpack
