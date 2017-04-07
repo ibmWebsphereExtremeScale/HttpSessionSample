@@ -37,7 +37,8 @@ To create a user-provided service on Bluemix with the json file you have created
 ```
 cf cups <service-name> -p <path to/credentials.json file>
 
-//Replace <service-name> with any name of your choosing but service name must have 'XSSession' as the prefix. For example:XSSession-credentials
+//Replace <service-name> with any name of your choosing but service name must have 'XSSession' as the prefix.
+//For example:XSSession-credentials
 ```
 # Running The Application
 Once you have successfully logged in, let's push the WAR file to your Bluemix account with the Liberty Buildpack (by default)
