@@ -12,7 +12,7 @@ The folder wxsClient is provided for this sample. It includes the WAR file HttpS
 # Bluemix Setup
 To run your application on Bluemix, you must sign up for Bluemix and install the Cloud Foundry command line tool. To sign up for Bluemix, head to https://console.ng.bluemix.net and register.
 
-You can download the Cloud Foundry command line tool by following the steps in https://github.com/cloudfoundry/cli
+You can download Cloud Foundry command line tool by following the steps in https://github.com/cloudfoundry/cli
 
 After you have installed Cloud Foundry command line tool, you need to point to Bluemix by running
 ```
@@ -21,9 +21,9 @@ cf login -a https://api.ng.bluemix.net
 This will prompt you to login with your Bluemix ID and password.
 
 # Providing Credentials
-This application uses a Bluemix user-provided service instance to provide credentials to connect to Websphere eXtreme Scale. For more information visit https://console.ng.bluemix.net/docs/services/reqnsi.html#add_service
+This application uses Bluemix user-provided service instance to provide credentials to connect to WebSphere eXtreme Scale. For more information visit https://console.ng.bluemix.net/docs/services/reqnsi.html#add_service
 
-We will store credentials in a json file. Create a json file that follows this format. Replace with valid credentials, making sure that you specify all catalog end points(CEPs), seperated by a comma:
+We will store credentials in a json file. Create a json file that follows this format. Replace with valid credentials, making sure that you specify all catalog end points (CEPs), seperated by a comma:
 ```
   {"catalogEndPoint":"<catalog server endpoint:port, eg: 129.11.111.111:4809,129.22.222.222:4809>",
    "gridName":"<grid name>",
@@ -39,11 +39,11 @@ cf cups <service-name> -p <path to/credentials.json file>
 
 //Replace <service-name> with any name of your choosing but service name must have 'XSSession' as the prefix. For example:XSSession-credentials
 ```
-# Running The Application (UNDER CONSTRUCTION)
-Once you have successfully logged in, let's push the WAR file to your Bluemix account with a Java Buildpack
+# Running The Application
+Once you have successfully logged in, let's push the WAR file to your Bluemix account with the Liberty Buildpack (by default)
 
 ```
-cf push <app name> -p HttpSessionSample.war -b https://github.com/cloudfoundry/java-buildpack
+cf push <app name> -p HttpSessionSample.war
 ```
 
 Next, bind the application to the user-provided service created
