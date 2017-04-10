@@ -72,6 +72,19 @@ cf restage <app name>
 # Accessing The Application
 Log onto ACE console: https://console.ng.bluemix.net and find your application on the dashboard. Clicking on the link provided will launch your sample application.
 
+- On starting the application, clicking any button on the page will establish a http session
+- You can retrieve session information, the session configuration and see the cookies
+- You can add or remove attributes to the session
+- You can invalidate the session
+- All session information will be persisted to the 'session' grid
+
+# Verify session persistence
+Verify that there is data in the Session grid
+
+Restart the application in ACE console (i.e. https://console.ng.bluemix.net)
+
+Go back to the browser and continue to use the app as if the application was never restarted. You will find that your session can resume even though you restarted the application. e.g. any attributes you set before the restart can still be retrieved. Without http session persistence, you would not have been able to resume this session after you restarted the application. All previous session data would have been lost.
+
 # Troubleshooting
 If an operation on the WebSphere eXtreme Scale fails, a failure message will be displayed on the application page. These are some suggestions on how you can troubleshoot the problem. Check the application logs - from the Bluemix UI console, click on your application and select 'Logs'. Check for any error messages in the logs.
 
